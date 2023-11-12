@@ -1,4 +1,5 @@
 import "./NavBar.css"  
+import {Carrito, Numerito} from "../CartWidget/CartWidget"
  export const NavBar = () =>{
     return <div className="container">
     <nav className="nav-extended">
@@ -10,8 +11,8 @@ import "./NavBar.css"
             <li><a className="link" href="">Home</a></li>
             <li><a className="link" href="">Sobre Nosotros</a></li>
             
-            <li><a className="dropdown-trigger" href="#!" data-target="dropdown1">Productos<i className="material-icons right">arrow_drop_down</i></a></li>
-            <li><a className="link">Carrito</a></li>
+            <li><a className="dropdown-trigger link" href="#!" data-target="dropdown1">Productos<i className="material-icons right">arrow_drop_down</i></a></li>
+            <li className="carrito"><a className="link"><Carrito/>Carrito<Numerito/></a> </li>
           </ul>
         </div>
         <ul id="dropdown1" className="dropdown-content">
