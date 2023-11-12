@@ -1,10 +1,25 @@
+import "./NavBar.css"  
  export const NavBar = () =>{
-    return <div className="navbar">
-        <ul className="lista">
-            <li><a className="link"href="">Home</a></li>
-            <li><a href="">Productos</a></li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="">Carrito</a></li>
+    return <div className="container">
+    <nav className="nav-extended">
+        <div className="nav-wrapper">
+          <a href="#" className="brand-logo">
+            <img src="../images/nexgen.jpeg" alt="Logo" className="right brand-logo" />
+          </a>
+          <ul className="left hide-on-med-and-down">
+            <li><a className="link" href="">Home</a></li>
+            <li><a className="link" href="">Sobre Nosotros</a></li>
+            
+            <li><a className="dropdown-trigger" href="#!" data-target="dropdown1">Productos<i className="material-icons right">arrow_drop_down</i></a></li>
+            <li><a className="link">Carrito</a></li>
+          </ul>
+        </div>
+        <ul id="dropdown1" className="dropdown-content">
+          <li><a className="link" href="#!">Todos los productos</a></li>
+          <li><a className="link" href="#!">Celulares</a></li>
+          <li className="divider link"></li>
+          <li><a className="link" href="#!"></a></li>
         </ul>
-    </div>
-}
+    </nav>
+      </div>
+    }
