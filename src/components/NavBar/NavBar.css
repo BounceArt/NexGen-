@@ -32,7 +32,7 @@
   list-style-type: none;
 }
 .link:hover {
-  color: #542444;
+  color: #54244;
 }
 
 .right li:first-child {
@@ -61,4 +61,8 @@ nav a .brand-logo.right{
 
 .carrito .numerito {
   margin-left: auto; 
+}
+
+#dropdown1 a{
+  color: black;
 }
