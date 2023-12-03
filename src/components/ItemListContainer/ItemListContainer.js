@@ -20,6 +20,7 @@ export const ItemListContainer = () => {
 
   return (
     <div>
+      <h1 className="titulo-catalogo">Catálogo</h1>
       <ItemList productos={productos} />
     </div>
   )

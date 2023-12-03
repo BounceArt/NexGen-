@@ -2,7 +2,7 @@ import React from 'react'
 const Contacto = () => {
   return (
     <><div>
-          <h1  style={{paddingTop: "80px"}} className='titulo-contacto'>Ponte en contacto</h1>
+          <h1  style={{paddingTop: "80px", color:"#ffab40"}}  className='titulo-contacto'>Ponte en contacto</h1>
       </div><div className="row">
               <form className="col s12">
                   <div className="row">
