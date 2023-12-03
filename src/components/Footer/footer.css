@@ -1,17 +1,10 @@
-.page-footer {
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-  
-.contenedor p{
-    color: #ffab40;
+.page-footer{
+    padding: 5px;
+    justify-content: space-between;
+    background-color: #1d1b1b !important;
 }
-.contenido{
-    display: flex;
+.container p{
+    color: #ffffff;
 }
 .redes {
     color: white;
@@ -19,6 +12,6 @@
   }
   
   .redes:hover {
-    color: #ffab40;
+    color: #000000;
   }
   
