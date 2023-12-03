@@ -1,10 +1,12 @@
-.contenedor{
-    display: flex;
-    padding: 5px;
-    justify-content: space-between;
-    
-    background-color: #ee6e73;
-}
+.page-footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
 .contenedor p{
     color: #ffab40;
 }
@@ -13,12 +15,10 @@
 }
 .redes {
     color: white;
-    
+    align-items: center;
   }
   
   .redes:hover {
     color: #ffab40;
-    transform: scale(1.5) !important;
-    transition: transform 0.3s ease-in-out !important;
   }
   

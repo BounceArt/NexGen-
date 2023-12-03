@@ -2,6 +2,7 @@ import "./NavBar.css"
 import M from 'materialize-css';
 import React, { useEffect } from 'react'
 import {Carrito, Numerito} from "../CartWidget/CartWidget"
+import { Link } from "react-router-dom";
  export const NavBar = () =>{
   useEffect(() => {
       const elems = document.querySelectorAll('.dropdown-trigger')
@@ -12,22 +13,22 @@ import {Carrito, Numerito} from "../CartWidget/CartWidget"
     return <div className="container">
     <nav className="nav-extended">
         <div className="nav-wrapper">
-          <a href="#" className="brand-logo">
+          <Link to="/" className="brand-logo">
             <img src="../images/nexgen.jpeg" alt="Logo" className="right brand-logo" />
-          </a>
+          </Link>
           <ul className="left hide-on-med-and-down">
-            <li><a className="link" href="">Home</a></li>
-            <li><a className="dropdown-trigger links" href="#!" data-target="dropdown1">Productos<i className="material-icons right">arrow_drop_down</i></a></li>
-            <li><a className="link" href="">Contacto</a></li>
-            <li className="carrito"><a className="link"><Carrito/>Carrito<Numerito/></a> </li>
+            <li><Link className="link" to="/">Home</Link></li>
+            <li><Link className="dropdown-trigger links" data-target="dropdown1">Productos<i className="material-icons right">arrow_drop_down</i></Link></li>
+            <li><Link className="link" to="/contacto">Contacto</Link></li>
+            <li className="carrito"><Link className="link"><Carrito/>Carrito<Numerito/></Link> </li>
           </ul>
         </div>
         <ul id="dropdown1" className="dropdown-content">
-          <li><a className="link" href="#!">Auriculares</a></li>
+          <li><Link className="link" to="/Auriculares">Auriculares</Link></li>
           <li className="divider link"></li>
-          <li><a className="link" href="#!">Celulares</a></li>
+          <li><Link className="link" to="/Celulares">Celulares</Link></li>
           <li className="divider link"></li>
-          <li><a className="link" href="#!">Monitores</a></li>
+          <li><Link className="link" to="/Monitores">Monitores</Link></li>
         </ul>
     </nav>
       </div>
