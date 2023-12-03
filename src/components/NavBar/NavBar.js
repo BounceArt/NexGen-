@@ -17,9 +17,8 @@ import {Carrito, Numerito} from "../CartWidget/CartWidget"
           </a>
           <ul className="left hide-on-med-and-down">
             <li><a className="link" href="">Home</a></li>
-            <li><a className="link" href="">Sobre Nosotros</a></li>
-            
             <li><a className="dropdown-trigger links" href="#!" data-target="dropdown1">Productos<i className="material-icons right">arrow_drop_down</i></a></li>
+            <li><a className="link" href="">Contacto</a></li>
             <li className="carrito"><a className="link"><Carrito/>Carrito<Numerito/></a> </li>
           </ul>
         </div>

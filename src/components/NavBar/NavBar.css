@@ -5,6 +5,7 @@
   width: 100%;
   padding: 10px;
   justify-content: space-between;
+  z-index: 1;
 }
 .nav-wrapper {
   display: flex;
@@ -30,9 +31,6 @@
 }
 .dropdown-content{
   list-style-type: none;
-}
-.link:hover {
-  color: #54244;
 }
 
 .right li:first-child {

@@ -1,0 +1,8 @@
+.card{
+    flex: 1 0 18rem;
+    margin: 0.5rem;
+    min-height: 10rem; 
+ }
+.card-content{
+    color: black;
+}
