@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Contacto.css"
 const Contacto = () => {
   return (
     <><div>
@@ -42,7 +43,7 @@ const Contacto = () => {
                       <div className="col s12">
                          
                           <div className="input-field inline">
-                          <button className="btn waves-effect waves-light" type="submit" name="action">Enviar
+                          <button className="btn waves-effect waves-light boton-contacto" type="submit" name="action">Enviar
                                 <i className="material-icons right">send</i>
                             </button>
                           </div>

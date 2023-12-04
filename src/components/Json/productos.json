@@ -2,54 +2,77 @@
     {
       "id": "1",
       "nombre": "Apple iPhone 15 Pro (256 GB) - Titanio Negro",
-      "precio": "1.813.000",
+      "precio": 1813000,
       "imagen": "/images/iphone.jpeg",
-      "stock": "20",
-      "categoria": "celulares",
+      "stock": 20,
+      "categoria": "Celulares",
       "descripcion": "iPhone 15 Pro. Forjado en titanio y equipado con el revolucionario chip A17 Pro, un Botón de Acción personalizable y el sistema de cámaras Pro más versátil."
     },
         {
           "id": "2",
           "nombre": "Samsung Galaxy S22 8gb 128gb Phantom White",
-          "precio": "459.999",
+          "precio": 459999,
           "imagen": "/images/s22.jpeg",
-          "stock": "30",
-          "categoria": "celulares",
+          "stock": 30,
+          "categoria": "Celulares",
           "descripcion": "Conoce la pantalla brillante del Galaxy S22 y la pantalla más brillante del Galaxy S22+.Las asombrosas pantallas Infinity-O de 120 Hz están diseñadas con Dynamic AMOLED 2X con tecnología Vision Booster para una alta visibilidad al aire libre, lo que mantiene la vista nítida a plena luz del día o de noche.Ahora el único resplandor que verás será el de las cámaras de los celosos."
         },
         {
           "id": "3",
           "nombre": "Auriculares In-ear Inalámbricos Xiaomi Redmi Buds 4 Lite Negro",
-          "precio": "21.800",
+          "precio": 21800,
           "imagen": "/images/xiaomi.jpeg",
-          "stock": "8",
-          "categoria": "auriculares",
+          "stock": 8,
+          "categoria": "Auriculares",
           "descripcion": "Con un solo toque, los Redmi Buds 4 Lite ofrecen un emparejamiento Bluetooth rápido y sin esfuerzo con tus dispositivos Android. Incluso puedes comprobar dónde los dejaste por última vez."
         },
         {
           "id": "4",
           "nombre": "Auriculares gamer HyperX Cloud Stinger HX-HSCS negro",
-          "precio": "51.699",
+          "precio": 51699,
           "imagen": "/images/hyperx.jpg",
-          "stock": "5",
-          "categoria": "auriculares",
+          "stock": 5,
+          "categoria": "Auriculares",
           "descripcion": "¡Experimentá la adrenalina de sumergirte en la escena de otra manera! Tener auriculares específicos para jugar cambia completamente tu experiencia en cada partida."
         },{
             "id": "5",
             "nombre": "Monitor Led Samsung 22'' Con Diseño Sin Bordes - Lf22t35 Color Negro",
-            "precio": "92.999",
+            "precio": 92999,
             "imagen": "/images/samsung22jpeg.jpg",
-            "stock": "2",
-            "categoria": "monitores",
+            "stock": 2,
+            "categoria": "Monitores",
             "descripcion": "Diseño minimalista, máxima concentración. La pantalla sin bordes en tres de sus lados aporta una estética clara y moderna a cualquier entorno de trabajo."
           },{
             "id": "6",
             "nombre": "Monitor Samsung Odyssey Crg5 24'' Curvo Color Negro",
-            "precio": "194.749",
+            "precio": 194749,
             "imagen": "/images/samsung24.jpeg",
-            "stock": "9",
-            "categoria": "monitores",
+            "stock": 9,
+            "categoria": "Monitores",
             "descripcion": "Entra en el juego con el Monitor Gamer CRG5 de 24. La pantalla curva 1800R te atrae y te sumerge en la acción, mientras que la tasa de actualización de 144 Hz y AMD Radeon FreeSync te brindan imágenes nítidas en escenas de acción rápida"
-          }
-      
+          },{
+            "id": "7",
+            "nombre": "Xiaomi Redmi Note 12 Pro 5G - Negro - 256 GB - 8 GB",
+            "precio": 406053,
+            "imagen": "/images/xiaomicel.jpeg",
+            "stock": 9,
+            "categoria": "Celulares",
+            "descripcion": "Conoce el Xiaomi Redmi Note 12 Pro 5G, un celular que te brinda una experiencia de alta calidad en todos los aspectos. Su potente procesador MediaTek Dimensity 1080 de 2.6 GHz y sus 8 GB de RAM garantizan un rendimiento fluido y rápido en tus aplicaciones y juegos favoritos. Además, su capacidad de almacenamiento de 256 GB te permite guardar todos tus archivos sin preocupaciones."
+          },{
+            "id": "8",
+            "nombre": "Auriculares G733 Con Micrófono Inalámbricos Lightspeed Rgb P Color Lila",
+            "precio": 198000,
+            "imagen": "/images/logi.jpeg",
+            "stock": 1,
+            "categoria": "Auriculares",
+            "descripcion": "¡Experimentá la adrenalina de sumergirte en la escena de otra manera! Tener auriculares específicos para jugar cambia completamente tu experiencia en cada partida. Con los Logitech G733 no te perdés ningún detalle y escuchás el audio tal y como fue diseñado por los creadores."
+            },{
+              "id": "9",
+              "nombre": "Monitor Samsung Odyssey G4 27'' Fhd 240hz Con Panel Ips Color Negro",
+              "precio": 345999,
+              "imagen": "/images/oddysey.jpeg",
+              "stock": 6,
+              "categoria": "Monitores",
+              "descripcion": "Samsung está fielmente comprometida en brindar productos de calidad y que contribuyan a crear un mejor futuro para las personas. Como empresa líder en la industria tecnológica uno de sus objetivos principales es desarrollar avanzadas e innovadoras soluciones. Es por ello que con este monitor tendrás y disfrutarás de una gran experiencia visual en todo momento."
+              }
   ]

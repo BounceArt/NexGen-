@@ -1,5 +1,5 @@
 import "../NavBar/NavBar.css" 
-export const Carrito = () =>{
+export const CarritoIcon = () =>{
     
     return <><div className="carrito-container">
         <span className="material-symbols-outlined carrito left">
