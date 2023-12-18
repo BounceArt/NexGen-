@@ -1,7 +1,7 @@
 /* ItemDetail.css */
 
 .contenedor {
-    border: 1px solid #ccc;
+    border: 1px solid #ffab40;
     padding: 100px;
     margin: 10px;
     border-radius: 8px;
@@ -28,13 +28,8 @@
     font-weight: bold;
   }
   
-  .agregar-al-carrito {
-    background: #4caf50;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
+.btn{
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: #ffab40 !important;
+}

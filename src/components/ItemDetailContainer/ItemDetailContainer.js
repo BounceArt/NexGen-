@@ -1,9 +1,7 @@
 import React, { useEffect, useState,} from 'react';
 import {useParams} from "react-router-dom"
 import ItemDetail from "../ItemDetail/ItemDetail";
-import Json from "../Json/productos.json";
-
-const ItemDetailContainer = () => {
+import Json from "../Json/productos.json";const ItemDetailContainer = () => {
   const [producto, setProducto] = useState(null)
   const { id } = useParams()
 
@@ -31,9 +29,7 @@ const ItemDetailContainer = () => {
     <div>
         <ItemDetail producto={producto} />
     </div>
-  );
-};
+  )
+}
 
 export default ItemDetailContainer
-
-
