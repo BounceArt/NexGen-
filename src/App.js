@@ -5,10 +5,13 @@ import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contacto from "./components/Contacto/Contacto";
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import Carrito from './components/Carrito/Carrito';
+import  Carrito  from "./components/Carrito/Carrito"
+import {CartContext, CartProvider} from "./components/CartContext/CartContext"
 function App() {
+  
   return (
     <div className="App">
+      <CartProvider>
       <BrowserRouter>
         <NavBar />
         <Routes>
@@ -16,12 +19,13 @@ function App() {
           <Route path='/categoria/:categoria' element={<ItemListContainer/>}/>
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
-          <Route path='/Carrito' element={<Carrito/>}/>
+          <Route path='/carrito' element={<Carrito/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
+      </CartProvider>
     </div>
-  );
+  )
 }
 
 export default App;

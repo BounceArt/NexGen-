@@ -1,15 +1,23 @@
-import "../NavBar/NavBar.css" 
-export const CarritoIcon = () =>{
-    
-    return <><div className="carrito-container">
-        <span className="material-symbols-outlined carrito left">
-            shopping_cart_checkout
-        </span> 
-    </div><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /></>
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { CartContext } from '../CartContext/CartContext';
 
-}
-export const Numerito = () =>{
-    return <div className="carrito-container">
-        <span className="numerito right">0</span>
+
+export const CartWidget = () => {
+  const { carrito } = useContext(CartContext)
+
+
+  return (
+    <div className="carrito-container">
+      <ul>
+        <li className="carrito">
+          <Link className="link" to="/carrito">
+            Carrito <span className="numerito right">{carrito.length}</span>
+          </Link>
+        </li>
+      </ul>
     </div>
+  )
 }
+
+export default CartWidget;

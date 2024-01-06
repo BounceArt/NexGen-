@@ -11,7 +11,7 @@ import Json from "../Json/productos.json";const ItemDetailContainer = () => {
         const data = await traerProductoPorId(id)
         setProducto(data);
       } catch (error) {
-        console.error('Error fetching product data:', error)
+        console.error('Error:', error)
       }
     }
 

@@ -8,7 +8,7 @@ export const ItemList = ({ productos }) => {
         <Item key={producto.id} producto={producto} />
       ))}
     </div>
-  );
-};
+  )
+}
 
   

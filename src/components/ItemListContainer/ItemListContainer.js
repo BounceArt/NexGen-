@@ -11,24 +11,24 @@ export const ItemListContainer = () => {
   const traerProductos = () => {
     return new Promise((resolve, reject) => {
       resolve(Json);
-    });
-  };
+    })
+  }
 
   useEffect(() => {
     traerProductos().then((res) => {
       const productosFiltrados = categoria
         ? res.filter((item) => item.categoria === categoria)
-        : res;
-      setProductos(productosFiltrados);
-    });
-  }, [categoria]);
+        : res
+      setProductos(productosFiltrados)
+    })
+  }, [categoria])
 
   return (
     <div>
       <h1 className="titulo-catalogo">{categoria ? categoria : "Catálogo"}</h1>
       <ItemList productos={productos} />
     </div>
-  );
-};
+  )
+}
 
 

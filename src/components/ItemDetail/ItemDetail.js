@@ -1,12 +1,33 @@
-import React from 'react';
-import "./ItemDetail.css"
+import React, { useContext, useState } from 'react';
+import "./ItemDetail.css";
 import ItemCount from '../ItemCount/ItemCount';
+import { CartContext } from '../CartContext/CartContext';
+
 const ItemDetail = ({ producto }) => {
+  const [cantidad, setCantidad] = useState(0)
+
+  const cartContext = useContext(CartContext);
+  const { carrito, agregarProducto, productoCantidad, precioFinal, carritoVaciar } = cartContext;
+  
   if (!producto) {
     return <p>Cargando</p>
   }
 
-    
+  const cantidadProducto = (nuevaCantidad) => {
+    setCantidad(nuevaCantidad)
+  }
+
+  const agregarAlCarrito = () => {
+    const productoAgregado = { ...producto, cantidad }
+    const productoEnCarrito = carrito.find((prod) => prod.id === productoAgregado.id)
+
+    if (productoEnCarrito) {
+      console.log("Este producto ya se encuentra en el carrito")
+    } else {    
+      agregarProducto(productoAgregado);
+    }
+  }
+
   return (
     <div className='contenedor'>
       <div className='contenido'>
@@ -14,12 +35,20 @@ const ItemDetail = ({ producto }) => {
         <div>
           <h4 className='titulo'>{producto.nombre}</h4>
           <p>{producto.descripcion}</p>
-          <hr/>
+          <hr />
           <p>ARS${producto.precio}</p>
           <p>Stock: {producto.stock}</p>
-          <hr/>
-          <ItemCount producto={producto}/>
-          <a className="waves-effect waves-light btn">Finalizar compra</a>
+          <hr />
+          <ItemCount
+            producto={producto}
+            onCantidadChange={cantidadProducto}
+          />
+          <a
+            className="waves-effect waves-light btn"
+            onClick={agregarAlCarrito}
+          >
+            Agregar al carrito
+          </a>
         </div>
       </div>
     </div>
