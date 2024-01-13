@@ -1,38 +1,42 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useEffect} from "react";
 
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  const [carrito, setCarrito] = useState([]);
+  const carritoAlmacenado = JSON.parse(localStorage.getItem("carrito")) || []
+  const [carrito, setCarrito] = useState(carritoAlmacenado);
 
-  const agregarProducto = (nuevoProducto, cantidad) => {
-    const productoAgregado = { ...nuevoProducto, cantidad };
-    const productoEnCarrito = carrito.find((prod) => prod.id === productoAgregado.id);
+  useEffect(() => {
+    localStorage.setItem("carrito", JSON.stringify(carrito))
+  }, [carrito])
 
-    if (productoEnCarrito) {
+  const agregarProducto = (nuevoProducto) => {
+    const productoAgregado = { ...nuevoProducto, precio: parseFloat(nuevoProducto.precio) }
+    const productoEnElCarrito = carrito.find((prod) => prod.id === productoAgregado.id)
+
+    if (productoEnElCarrito) {
       console.log("Este producto ya se encuentra en el carrito");
     } else {
-      setCarrito((prevCarrito) => [...prevCarrito, productoAgregado]);
+      setCarrito((prevCarrito) => [...prevCarrito, productoAgregado])
     }
-  };
+  }
 
   const productoCantidad = () => {
-    return carrito.reduce((acc, prod) => acc + prod.cantidad, 0);
-  };
-
+    return carrito.reduce((acc, prod) => acc + parseInt(prod.cantidad, 10), 0)
+    
+  }
+  
   const precioFinal = () => {
-    return carrito.reduce((acc, prod) => acc + prod.precio * prod.cantidad, 0);
-  };
+    return carrito.reduce((acc, prod) => acc + parseFloat(prod.precio) * parseInt(prod.cantidad), 0)
+  }
 
   const carritoVaciar = () => {
-    setCarrito([]);
-  };
+    setCarrito([])
+  }
 
   return (
     <CartContext.Provider value={{ carrito, agregarProducto, productoCantidad, precioFinal, carritoVaciar }}>
       {children}
     </CartContext.Provider>
-  );
-};
-
-
+  )
+}

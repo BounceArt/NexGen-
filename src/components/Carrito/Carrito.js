@@ -1,24 +1,31 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../CartContext/CartContext'
-
+import "./Carrito.css"
 const Carrito = () => {
-  const {carrito, precioFinal} = useContext(CartContext)
+  const {carrito, precioFinal, carritoVaciar} = useContext(CartContext)
+
+  const handleVaciarCarrito = () => {
+    carritoVaciar();
+  }
 
   return (
     <div className='contenedor-carrito'>
-      <h2>Carrito de compras</h2>
-      {carrito.lenght === 0 ? (<p>Carrito vacio.</p>) : (
+      <h2 className='titulo'>Carrito de compras</h2>
+      {carrito.length === 0 ? (<p>Carrito vacio.</p>) : (
         <div>
-          <ul>
+          <ul className='lista-productos'>
           {carrito.map((producto) => (
-          <li key={producto.id}>
-            <img src={producto.imagen} alt={producto.nombre} /> 
+          <li className='lista-2' key={producto.id}>
+            <img className='imagen' src={producto.imagen} alt={producto.nombre} /> 
             {producto.nombre} - Cantidad: {producto.cantidad} - Precio: ARS${producto.precio * producto.cantidad}
           </li>
             ))}
           </ul>
-          <p>Total: ARS${precioFinal()}</p>
-          
+          <li>
+            <p className='total'>Total: ARS${precioFinal()}</p>
+            <button className='vaciar' onClick={handleVaciarCarrito}>Vaciar</button>
+            <button className='comprar'>Comprar</button>
+          </li>
         </div>
       )}
     </div>

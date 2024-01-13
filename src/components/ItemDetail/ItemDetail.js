@@ -7,7 +7,7 @@ const ItemDetail = ({ producto }) => {
   const [cantidad, setCantidad] = useState(0)
 
   const cartContext = useContext(CartContext);
-  const { carrito, agregarProducto, productoCantidad, precioFinal, carritoVaciar } = cartContext;
+  const { carrito, agregarProducto} = cartContext;
   
   if (!producto) {
     return <p>Cargando</p>

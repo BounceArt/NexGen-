@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contacto from "./components/Contacto/Contacto";
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import  Carrito  from "./components/Carrito/Carrito"
-import {CartContext, CartProvider} from "./components/CartContext/CartContext"
+import {CartProvider} from "./components/CartContext/CartContext"
 function App() {
   
   return (

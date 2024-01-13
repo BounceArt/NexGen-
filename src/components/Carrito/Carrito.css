@@ -1,3 +1,63 @@
-.contenedor-carrito{
-    margin-top: 100px;
-}
+.contenedor-carrito {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+ .titulo{
+  padding-top: 50px;
+  font-size: 1.5em;
+  color: #333;
+ }
+  .lista-productos{
+    list-style: none;
+    padding: 0;
+  }
+  .lista-2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  .imagen{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  .total{
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .comprar{
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+  }
+  .comprar:hover{
+    background-color: #c82333;
+  }
+  .vaciar{
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .vaciar:hover{
+    background-color: #c82333;
+  }
