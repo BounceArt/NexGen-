@@ -17,7 +17,7 @@ const Carrito = () => {
           {carrito.map((producto) => (
           <li className='lista-2' key={producto.id}>
             <img className='imagen' src={producto.imagen} alt={producto.nombre} /> 
-            {producto.nombre} - Cantidad: {producto.cantidad} - Precio: ARS${producto.precio * producto.cantidad}
+            {producto.titulo} - Cantidad: {producto.cantidad} - Precio: ARS${producto.precio * producto.cantidad}
           </li>
             ))}
           </ul>

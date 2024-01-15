@@ -5,7 +5,7 @@ export const ItemList = ({ productos }) => {
   return (
     <div className="row" style={{ marginTop: '100px' }}>
       {productos.map((producto) => (
-        <Item key={producto.id} producto={producto} />
+        <Item key={producto.id}  producto={producto} />
       ))}
     </div>
   )

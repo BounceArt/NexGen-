@@ -33,7 +33,7 @@ const ItemDetail = ({ producto }) => {
       <div className='contenido'>
         <img className="imagen-producto" src={producto.imagen} alt={producto.nombre}></img>
         <div>
-          <h4 className='titulo'>{producto.nombre}</h4>
+          <h4 className='titulo'>{producto.titulo}</h4>
           <p>{producto.descripcion}</p>
           <hr />
           <p>ARS${producto.precio}</p>
