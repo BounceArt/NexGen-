@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../CartContext/CartContext'
 import "./Carrito.css"
+import { Link } from 'react-router-dom'
 const Carrito = () => {
   const {carrito, precioFinal, carritoVaciar} = useContext(CartContext)
 
@@ -24,7 +25,7 @@ const Carrito = () => {
           <li>
             <p className='total'>Total: ARS${precioFinal()}</p>
             <button className='vaciar' onClick={handleVaciarCarrito}>Vaciar</button>
-            <button className='comprar'>Comprar</button>
+            <Link to="/checkout">Comprar</Link>
           </li>
         </div>
       )}

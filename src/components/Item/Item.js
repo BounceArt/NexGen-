@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Item = ({ producto }) => {
   return (
-    <div className="col s12 m6 l4" key={producto.id}>
-      <div className="card">
+    <div className="col s12 l4 " key={producto.id}>
+      <div className="card contenedor-item">
         <div className="card-image">
           <img src={producto.imagen} alt="imagen" />
         </div>
