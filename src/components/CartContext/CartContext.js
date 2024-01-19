@@ -11,9 +11,9 @@ export const CartProvider = ({ children }) => {
   }, [carrito])
 
   const agregarProducto = (nuevoProducto) => {
-    const productoAgregado = { ...nuevoProducto, precio: parseFloat(nuevoProducto.precio) }
+    const productoAgregado = { ...nuevoProducto, precio: parseFloat(nuevoProducto.precio), cantidad: nuevoProducto.cantidad || 1, }
     const productoEnElCarrito = carrito.find((prod) => prod.id === productoAgregado.id)
-
+    
     if (productoEnElCarrito) {
       console.log("Este producto ya se encuentra en el carrito");
     } else {
